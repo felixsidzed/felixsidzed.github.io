@@ -3,6 +3,9 @@
 	bottom: 0;
 	width: 100%;
 	color: white;
+	z-index: 1000;
+	background-color: #1d1d1f72;
+	backdrop-filter: blur(10px);
 }
 
 footer {

@@ -9,16 +9,25 @@ body {
 }
 
 .projects-container {
-	position: absolute;
+	position: relative;
 	width: 80%;
 	height: 22%;
 	border: 3px solid gray;
 	border-radius: 10px;
-	top: 40%;
+	top: 500px;
 	left: 12%;
-
+	background-color: #1d1d1f;
 	overflow: auto;
 	white-space: nowrap;
+	margin-bottom: 40%;
+}
+
+.projects-label {
+	position: relative;
+	width: 80%;
+	height: 22%;
+	top: 500px;
+	left: 12%;
 }
 
 .project-container {
@@ -37,24 +46,6 @@ body {
 	overflow: hidden;
 	width: 120px;
 	text-align: center;
-}
-
-::-webkit-scrollbar {
-	width: 10px;
-}
-
-::-webkit-scrollbar-track {
-	background: #ffffff00;
-}
-
-::-webkit-scrollbar-thumb {
-	width: 1%;
-	background: #424551;
-	border-radius: 25px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-	background: #555;
 }
 
 @keyframes fadeInAnimation {

@@ -20,6 +20,23 @@ ul {
 	margin-bottom: 15px
 }
 
+html::-webkit-scrollbar {
+	width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+	background: #1d1d1f;
+}
+
+html::-webkit-scrollbar-thumb {
+	background: #424551;
+	border-radius: 25px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -27,9 +44,9 @@ ul {
 }
 
 body {
-	font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
 	line-height: 1.6;
-	background: #1d1d1f;
+	background: radial-gradient(circle, #1d1d1f, #0d0d0e) !important;
 }
 
 h1 {
