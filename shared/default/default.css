@@ -29,7 +29,7 @@ ul {
 body {
 	font-family: Arial, sans-serif;
 	line-height: 1.6;
-	background-color: #1d1d1f;
+	background: #1d1d1f;
 }
 
 h1 {
@@ -37,7 +37,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2em
+	font-size: 2em0
 }
 
 h3 {
@@ -85,7 +85,7 @@ img {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translateX(-50%) translateY(-50%)
+	transform: translateX(-50%) translateY(-50%);
 }
 
 @media (max-width:768px) {
