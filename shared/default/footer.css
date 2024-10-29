@@ -1,1 +1,74 @@
-.footer{position:fixed;}footer{padding-left:.208333333in;}footer{padding-bottom:.208333333in;}.footer,footer{bottom:0;}footer{padding-right:.208333333in;}.footer,footer{width:100%;}.discord-link h5{display:inline-block;}.footer{color:white;}footer{padding-top:.208333333in;}.footer{padding-left:7.5pt;}footer,[class~=discord-link]{text-align:center;}.footer{padding-bottom:7.5pt;}footer{color:#dbdbdb;}.discord-link h5{vertical-align:top;}.footer{padding-right:7.5pt;}footer{position:relative;}footer{height:3.75pc;}.footer{padding-top:7.5pt;}
+.footer {
+	position: fixed;
+}
+
+footer {
+	padding-left: .208333333in;
+}
+
+footer {
+	padding-bottom: .208333333in;
+}
+
+.footer,
+footer {
+	bottom: 0;
+}
+
+footer {
+	padding-right: .208333333in;
+}
+
+.footer,
+footer {
+	width: 100%;
+}
+
+.discord-link h5 {
+	display: inline-block;
+}
+
+.footer {
+	color: white;
+}
+
+footer {
+	padding-top: .208333333in;
+}
+
+.footer {
+	padding-left: 7.5pt;
+}
+
+footer,
+[class~=discord-link] {
+	text-align: center;
+}
+
+.footer {
+	padding-bottom: 7.5pt;
+}
+
+footer {
+	color: #dbdbdb;
+}
+
+.discord-link h5 {
+	vertical-align: top;
+}
+
+.footer {
+	padding-right: 7.5pt;
+}
+
+footer {
+	position: relative;
+}
+
+footer {
+	height: 3.75pc;
+}
+
+.footer {
+	padding-top: 7.5pt;
+}

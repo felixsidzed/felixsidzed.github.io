@@ -1,1 +1,29 @@
-const _0x43d157=_0x3042;(function(_0x273834,_0x1fe92f){const _0x42f5c4=_0x3042,_0x4e5ca8=_0x273834();while(!![]){try{const _0x56cd71=parseInt(_0x42f5c4(0x1e5))/0x1+parseInt(_0x42f5c4(0x1e7))/0x2+parseInt(_0x42f5c4(0x1de))/0x3+parseInt(_0x42f5c4(0x1e4))/0x4*(parseInt(_0x42f5c4(0x1d7))/0x5)+parseInt(_0x42f5c4(0x1dc))/0x6*(parseInt(_0x42f5c4(0x1df))/0x7)+parseInt(_0x42f5c4(0x1e0))/0x8+parseInt(_0x42f5c4(0x1e2))/0x9*(-parseInt(_0x42f5c4(0x1e6))/0xa);if(_0x56cd71===_0x1fe92f)break;else _0x4e5ca8['push'](_0x4e5ca8['shift']());}catch(_0x40bd73){_0x4e5ca8['push'](_0x4e5ca8['shift']());}}}(_0x1f7f,0x1e865));function _0x3042(_0x595165,_0x1f1267){const _0x1f7f75=_0x1f7f();return _0x3042=function(_0x304208,_0x2ffe29){_0x304208=_0x304208-0x1d7;let _0x299ba9=_0x1f7f75[_0x304208];return _0x299ba9;},_0x3042(_0x595165,_0x1f1267);}async function render(_0x44d678){const _0x3d50ca=_0x3042;let _0x55b328=_0x44d678;_0x55b328=_0x55b328[_0x3d50ca(0x1e1)](/{{\s+defaultstyle\s+}}/g,()=>{const _0x5c86d2=_0x3d50ca;return _0x5c86d2(0x1e8);});const _0x270c25=[..._0x55b328[_0x3d50ca(0x1e3)](/{{\s+include (".+"|'.+')\s+}}/g)];for(const _0x12ee55 of _0x270c25){const _0x2ed04f=await fetch('/'+_0x12ee55[0x1][_0x3d50ca(0x1dd)](0x1,-0x1));if(!_0x2ed04f['ok'])throw new Error(_0x3d50ca(0x1ed)+_0x2ed04f[_0x3d50ca(0x1db)]);_0x55b328=_0x55b328[_0x3d50ca(0x1e1)](_0x12ee55[0x0],await _0x2ed04f[_0x3d50ca(0x1e9)]());}return _0x55b328;}const startTime=new Date();function _0x1f7f(){const _0x36f80a=['network\x20response\x20was\x20not\x20ok:\x20','295jFwcCt','innerHTML','rendered\x20in\x20','DOMContentLoaded','statusText','6WJhPVs','slice','532695yfcJnF','924980JWdeOp','683760GhRAOU','replace','522InLpIs','matchAll','8732qgTLkj','249451LlfryI','150720qBNMRL','451564sTqoDm','<link\x20rel=\x22stylesheet\x22\x20href=\x22/shared/default/default.css\x22>','text','addEventListener','body','head'];_0x1f7f=function(){return _0x36f80a;};return _0x1f7f();}document[_0x43d157(0x1ea)](_0x43d157(0x1da),async()=>{const _0x1c40f9=_0x43d157;document[_0x1c40f9(0x1eb)][_0x1c40f9(0x1d8)]=await render(document[_0x1c40f9(0x1eb)]['innerHTML']),document[_0x1c40f9(0x1ec)][_0x1c40f9(0x1d8)]=await render(document[_0x1c40f9(0x1ec)][_0x1c40f9(0x1d8)]),console['log'](_0x1c40f9(0x1d9)+(new Date()-startTime)+'ms');});
+async function render(html) {
+	let rendered = html
+
+	rendered = rendered.replace(/{{\s+head(?: "(.+)")?\s+}}/g, (match, title) => {
+		return `<meta charset="utf-8">\n<meta http-equiv="X-UA-Compatible" content="IE=edge">\n<title>skibidi toilet rizz${title ? " - " + title : ""}</title>\n<meta name="viewport" content="width=device-width, initial-scale=1">\n{{ defaultstyle }}`
+	})
+	rendered = rendered.replace(/{{\s+defaultcss\s+}}|{{\s+defaultstyle\s+}}/g, `<link rel="stylesheet" href="/shared/default/default.css">`)
+
+	const includePromises = []
+	for (const match of [...rendered.matchAll(/{{\s+include\s+"(.+?)"\s+}}/g)]) {
+		includePromises.push(fetch(`/` + match[1])
+			.then(response => {
+				if (!response.ok)
+					throw new Error(`network response was not ok: ${response.statusText}`)
+				return response.text()
+			})
+			.then(content => rendered = rendered.replace(match[0], content)))
+	}
+	await Promise.all(includePromises)
+
+	return rendered
+}
+
+const startTime = new Date()
+document.addEventListener("DOMContentLoaded", async () => {
+	document.body.innerHTML = await render(document.body.innerHTML)
+	document.head.innerHTML = await render(document.head.innerHTML)
+	console.log(`rendered in ${new Date() - startTime}ms`)
+})
