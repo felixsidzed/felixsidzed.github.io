@@ -2,7 +2,8 @@ async function render(html) {
 	let rendered = html
 
 	rendered = rendered.replace(/{{\s+head(?: "(.+)")?\s+}}/g, (match, title) => {
-		return `<meta charset="utf-8">\n<meta http-equiv="X-UA-Compatible" content="IE=edge">\n<title>skibidi toilet rizz${title ? " - " + title : ""}</title>\n<meta name="viewport" content="width=device-width, initial-scale=1">\n{{ defaultstyle }}`
+		console.log(match)
+		return `<meta charset="utf-8">\n<meta http-equiv="X-UA-Compatible" content="IE=edge">\n<title>felix${title ? " - " + title : ""}</title>\n<meta name="viewport" content="width=device-width, initial-scale=1">\n{{ defaultstyle }}`
 	})
 	rendered = rendered.replace(/{{\s+defaultcss\s+}}|{{\s+defaultstyle\s+}}/g, `<link rel="stylesheet" href="/shared/default/default.css">`)
 

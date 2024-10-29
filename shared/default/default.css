@@ -56,9 +56,14 @@ h6 {
 	font-size: 1em
 }
 
-a {
+a:not(.nolinkcolor) {
 	color: #007bff;
 	text-decoration: none
+}
+
+.nolinkcolor {
+	color: #dbdbdb;
+	text-decoration: none;
 }
 
 a:hover {
