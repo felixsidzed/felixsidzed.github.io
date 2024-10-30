@@ -17,11 +17,11 @@ h6,
 ol,
 p,
 ul {
-	margin-bottom: 15px
+	margin-bottom: 0.938em
 }
 
 html::-webkit-scrollbar {
-	width: 10px;
+	width: 0.625em;
 }
 
 html::-webkit-scrollbar-track {
@@ -30,7 +30,7 @@ html::-webkit-scrollbar-track {
 
 html::-webkit-scrollbar-thumb {
 	background: #424551;
-	border-radius: 25px;
+	border-radius: 1.563em;
 }
 
 html::-webkit-scrollbar-thumb:hover {
@@ -46,7 +46,11 @@ html::-webkit-scrollbar-thumb:hover {
 body {
     font-family: Arial, sans-serif;
 	line-height: 1.6;
-	background: radial-gradient(circle, #1d1d1f, #0d0d0e) !important;
+	background: -webkit-radial-gradient(circle, #1d1d1fff, #0d0d0eff);
+	background-size: cover;
+	background-attachment: fixed;
+
+	z-index: 1;
 }
 
 h1 {
@@ -54,7 +58,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2em0
+	font-size: 2em
 }
 
 h3 {
@@ -89,7 +93,7 @@ a:hover {
 
 ol,
 ul {
-	padding-left: 20px
+	padding-left: 1.25em
 }
 
 img {
@@ -105,8 +109,28 @@ img {
 	transform: translateX(-50%) translateY(-50%);
 }
 
-@media (max-width:768px) {
-	.flex {
-		flex-direction: column
-	}
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-container {
+        width: 100%;
+        text-align: center;
+    }
 }

@@ -12,9 +12,9 @@ body {
 	position: relative;
 	width: 80%;
 	height: 22%;
-	border: 3px solid gray;
-	border-radius: 10px;
-	top: 500px;
+	border: 0.188em solid gray;
+	border-radius: 0.625em;
+	top: 31.25em;
 	left: 12%;
 	background-color: #1d1d1f;
 	overflow: auto;
@@ -26,25 +26,26 @@ body {
 	position: relative;
 	width: 80%;
 	height: 22%;
-	top: 500px;
+	top: 31.25em;
 	left: 12%;
 }
 
 .project-container {
 	position: relative;
-	width: 120px;
+	width: 7.5em;
 	height: 60%;
-	margin: 10px;
+	margin: 0.625em;
+	max-width: 100%;
 }
 
 .project-container img {
-	transform: translateX(10px);
+	transform: translateX(0.625em);
 }
 
 .project-container h5 {
 	text-overflow: ellipsis;
 	overflow: hidden;
-	width: 120px;
+	width: 7.5em;
 	text-align: center;
 }
 
