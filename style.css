@@ -20,12 +20,14 @@ body {
 	overflow: auto;
 	white-space: nowrap;
 	margin-bottom: 40%;
+	display: flex;
 }
 
 .projects-label {
 	position: relative;
 	width: 80%;
 	height: 22%;
+	max-height: 22%;
 	top: 31.25em;
 	left: 12%;
 }
@@ -36,6 +38,10 @@ body {
 	height: 60%;
 	margin: 0.625em;
 	max-width: 100%;
+}
+
+img {
+	border-radius: 30%;
 }
 
 .project-container img {
