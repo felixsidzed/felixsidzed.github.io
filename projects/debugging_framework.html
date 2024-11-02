@@ -1,0 +1,421 @@
+<html>
+	<head>
+		{{ head "Debugging Framework" }}
+		<link rel="stylesheet" href="/projects/dbgfw_style.css">
+	</head>
+	<body>
+		<div class="gradient-div">
+			<div class="hcenter">
+				<a href="https://www.roblox.com/games/128901519644765/debugging-framework-if-it-was-good" class="nolinkcolor">
+					<h1>Debugging Framework v2</h1>
+				</a>
+				<small>you can find the original <a href="https://www.roblox.com/games/13617226961/Debugging-Framework">here</a></small>
+
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+
+				<p>
+					Debugging Framework(or DF for short) is a project by voxlis made<small>(skidded)</small> to test scripts without actually using an executor<br>
+					his was lowk ass so i remade it and added most of the UNC functions<br>
+					you can find the v2 <a href="https://www.roblox.com/games/128901519644765/debugging-framework-if-it-was-good">here</a> or by clicking on the title<br>
+				</p>
+
+				<br>
+				<br>
+				<br>
+
+				<img src="/shared/media/df_v2_guide.png" alt="thingy" width="500" height="500">
+				<img src="/shared/media/df_v2_example.png" alt="thingy" width="500" height="500">
+
+				<br>
+				<br>
+				<br>
+
+				<h2>UNC functions added:</h2>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Type</th>
+							<th>Functions Added</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="6">Drawing.new</td>
+							<td>Square ✅</td>
+						</tr>
+						<tr>
+							<td>Circle ✅</td>
+						</tr>
+						<tr>
+							<td>Line ✅</td>
+						</tr>
+						<tr>
+							<td>Image ❌</td>
+						</tr>
+						<tr>
+							<td>Triangle ❌</td>
+						</tr>
+						<tr>
+							<td>Quad ❌</td>
+						</tr>
+
+						<tr>
+							<td colspan="2" style="border: none; height: 0;">
+								<hr style="border: none; height: 0;">
+							</td>
+						</tr>
+
+						<tr>
+							<td rowspan="3">Drawing</td>
+							<td>setrenderproperty ✅</td>
+						</tr>
+						<tr>
+							<td>getrenderproperty ✅</td>
+						</tr>
+						<tr>
+							<td>cleardrawcache ❌</td>
+						</tr>
+
+						<tr>
+							<td colspan="2" style="border: none; height: 0;">
+								<hr style="border: none; height: 0;">
+							</td>
+						</tr>
+
+						<tr>
+							<td rowspan="1">WebSocket</td>
+							<td>Not Supported ❌</td>
+						</tr>
+
+						<tr>
+							<td colspan="2" style="border: none; height: 0;">
+								<hr style="border: none; height: 0;">
+							</td>
+						</tr>
+
+						<tr>
+							<td rowspan="5">cache</td>
+							<td>cache.invalidate ❌</td>
+						</tr>
+
+						<tr>
+							<td>cache.iscached ❌</td>
+						</tr>
+
+						<tr>
+							<td>cache.replace ❌</td>
+						</tr>
+
+						<tr>
+							<td>cloneref ✅</td>
+						</tr>
+
+						<tr>
+							<td>compareinstances ✅</td>
+						</tr>
+
+						<tr>
+							<td colspan="2" style="border: none; height: 0;">
+								<hr style="border: none; height: 0;">
+							</td>
+						</tr>
+
+						<tr>
+							<td rowspan="10">closures</td>
+							<td>checkcaller ✅</td>
+						</tr>
+
+						<tr>
+							<td>clonefunction ✅</td>
+						</tr>
+
+						<tr>
+							<td>getcallingscript ✅</td>
+						</tr>
+
+						<tr>
+							<td>hookfunction* ✅</td>
+						</tr>
+
+						<tr>
+							<td>iscclosure ✅</td>
+						</tr>
+
+						<tr>
+							<td>islclosure ✅</td>
+						</tr>
+
+						<tr>
+							<td>isexecutorclosure ✅</td>
+						</tr>
+
+						<tr>
+							<td>loadstring ✅</td>
+						</tr>
+
+						<tr>
+							<td>newcclosure ❌</td>
+						</tr>
+
+						<tr>
+							<td>newlclosure ✅</td>
+						</tr>
+
+						<tr>
+							<td colspan="2" style="border: none; height: 0;">
+								<hr style="border: none; height: 0;">
+							</td>
+						</tr>
+
+						<tr>
+							<td rowspan="1">console</td>
+							<td>coming soon 🔜</td>
+						</tr>
+
+						<tr>
+							<td colspan="2" style="border: none; height: 0;">
+								<hr style="border: none; height: 0;">
+							</td>
+						</tr>
+
+						<tr>
+							<td rowspan="7">crypt</td>
+							<td>base64encode ✅</td>
+						</tr>
+
+						<tr>
+							<td>base64decode ✅</td>
+						</tr>
+
+						<tr>
+							<td>encrypt ✅</td>
+						</tr>
+
+						<tr>
+							<td>decrypt ✅</td>
+						</tr>
+
+						<tr>
+							<td>generatebytes ✅</td>
+						</tr>
+
+						<tr>
+							<td>generatekey ✅</td>
+						</tr>
+
+						<tr>
+							<td>hash ✅</td>
+						</tr>
+
+						<tr>
+							<td colspan="2" style="border: none; height: 0;">
+								<hr style="border: none; height: 0;">
+							</td>
+						</tr>
+
+						<tr>
+							<td rowspan="1">debug</td>
+							<td>Not Supported (using roblox's debug library) ❌</td>
+						</tr>
+
+						<tr>
+							<td colspan="2" style="border: none; height: 0;">
+								<hr style="border: none; height: 0;">
+							</td>
+						</tr>
+
+						<tr>
+							<td rowspan="11">filesystem</td>
+							<td>readfile ✅</td>
+						</tr>
+
+						<tr>
+							<td>listfiles ✅</td>
+						</tr>
+
+						<tr>
+							<td>writefile ✅</td>
+						</tr>
+
+						<tr>
+							<td>makefolder ✅</td>
+						</tr>
+
+						<tr>
+							<td>appendfile ✅</td>
+						</tr>
+
+						<tr>
+							<td>isfile ✅</td>
+						</tr>
+
+						<tr>
+							<td>isfolder ✅</td>
+						</tr>
+
+						<tr>
+							<td>delfile ✅</td>
+						</tr>
+
+						<tr>
+							<td>delfolder ✅</td>
+						</tr>
+
+						<tr>
+							<td>loadfile ✅</td>
+						</tr>
+
+						<tr>
+							<td>dofile ✅</td>
+						</tr>
+
+						<tr>
+							<td colspan="2" style="border: none; height: 0;">
+								<hr style="border: none; height: 0;">
+							</td>
+						</tr>
+
+						<tr>
+							<td rowspan="1">input</td>
+							<td>Not Supported (except isrbxactive) ❌</td>
+						</tr>
+
+						<tr>
+							<td colspan="2" style="border: none; height: 0;">
+								<hr style="border: none; height: 0;">
+							</td>
+						</tr>
+
+						<tr>
+							<td rowspan="1">instances</td>
+							<td>Not Supported ❌</td>
+						</tr>
+
+						<tr>
+							<td colspan="2" style="border: none; height: 0;">
+								<hr style="border: none; height: 0;">
+							</td>
+						</tr>
+
+						<tr>
+							<td rowspan="1">metatable</td>
+							<td>Not Supported ❌</td>
+						</tr>
+
+						<tr>
+							<td colspan="2" style="border: none; height: 0;">
+								<hr style="border: none; height: 0;">
+							</td>
+						</tr>
+
+						<tr>
+							<td rowspan="8">misc</td>
+							<td>identifyexecutor ✅</td>
+						</tr>
+
+						<tr>
+							<td>lz4compress ✅</td>
+						</tr>
+
+						<tr>
+							<td>lz4decompress ✅</td>
+						</tr>
+
+						<tr>
+							<td>messagebox ❌</td>
+						</tr>
+
+						<tr>
+							<td>queueonteleport ❌</td>
+						</tr>
+
+						<tr>
+							<td>request ❌</td>
+						</tr>
+
+						<tr>
+							<td>setclipboard ❌</td>
+						</tr>
+
+						<tr>
+							<td>setfpscap ✅</td>
+						</tr>
+
+						<tr>
+							<td colspan="2" style="border: none; height: 0;">
+								<hr style="border: none; height: 0;">
+							</td>
+						</tr>
+
+						<tr>
+							<td rowspan="11">scripts</td>
+							<td>getgc ❌</td>
+						</tr>
+
+						<tr>
+							<td>getgenv ✅</td>
+						</tr>
+
+						<tr>
+							<td>getloadedmodules ❌</td>
+						</tr>
+
+						<tr>
+							<td>getrenv ❌</td>
+						</tr>
+
+						<tr>
+							<td>getrunningscripts ✅</td>
+						</tr>
+
+						<tr>
+							<td>getscriptbytecode ❌</td>
+						</tr>
+
+						<tr>
+							<td>getscriptclosure ❌</td>
+						</tr>
+
+						<tr>
+							<td>getscripts ✅</td>
+						</tr>
+
+						<tr>
+							<td>getsenv ❌</td>
+						</tr>
+
+						<tr>
+							<td>getthreadidentity ✅</td>
+						</tr>
+
+						<tr>
+							<td>setthreadidentity ❌</td>
+						</tr>
+
+						<tr>
+							<td colspan="2" style="border: none; height: 0;">
+								<hr style="border: none; height: 0;">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+			</div>
+	
+			{{ include "shared/default/footer.html" }}
+			<script src="/shared/default/tr.js"></script>
+		</div>
+	</body>
+</html>

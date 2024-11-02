@@ -1,0 +1,31 @@
+.hcenter {
+	text-align: center;
+	align-items: center;
+	margin: auto;
+}
+
+table {
+	width: 60%;
+	border-collapse: collapse;
+	margin: 1.25em auto;
+}
+
+tbody {
+	padding-top: 3.125em;
+}
+
+th, td {
+	border: 0.063em solid #ddd;
+	padding: 0.625em;
+	text-align: center;
+}
+
+th {
+	background-color: #373737;
+}
+
+@media (max-width: 768px) {
+	table {
+		width: 100%;
+	}
+}
