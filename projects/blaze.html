@@ -1,15 +1,15 @@
 <html>
 	<head>
-		{{ head "Debugging Framework" }}
+		{{ head "Blaze" }}
 		<link rel="stylesheet" href="/projects/dbgfw_style.css">
 	</head>
 	<body>
 		<div class="gradient-div">
 			<div class="hcenter">
-				<a href="https://www.roblox.com/games/128901519644765/debugging-framework-if-it-was-good" class="nolinkcolor">
-					<h1>Debugging Framework v2</h1>
+				<a href="https://www.roblox.com/games/128901519644765/Blaze-Project" class="nolinkcolor">
+					<h1>Blaze</h1>
 				</a>
-				<small>you can find the original <a href="https://www.roblox.com/games/13617226961/Debugging-Framework">here</a></small>
+				<small>you can find the original <a href="https://www.roblox.com/games/13617226961/Blaze-Project">here</a></small>
 
 				<br>
 				<br>
@@ -19,23 +19,26 @@
 				<br>
 
 				<p>
-					Debugging Framework(or DF for short) is a project made<small>(skidded)</small> by voxlis to test scripts without actually using an executor<br>
-					his was lowk ass so i remade it and added most of the UNC stuff<br>
-					you can find the v2 <a href="https://www.roblox.com/games/128901519644765/debugging-framework-if-it-was-good">here</a> or by clicking on the title<br>
+					before me there was a project made<small>(skidded)</small> by voxlis<br>
+					called Debugging Framework(or DF for short) made to test scripts without actually using an executor<br>
+					his was ass so i remade it and added most of the UNC stuff<br>
+					you can find the remake <a href="https://www.roblox.com/games/128901519644765/debugging-framework-if-it-was-good">here</a> or by clicking on the title<br>
 				</p>
 
 				<br>
 				<br>
 				<br>
 
-				<img src="/shared/media/df_v2_guide.png" alt="thingy" width="500" height="500">
-				<img src="/shared/media/df_v2_example.png" alt="thingy" width="500" height="500">
+				<img src="/shared/media/blaze_guide.png" alt="thingy" width="500" height="500">
+				<img src="/shared/media/blaze_example.png" alt="thingy" width="500" height="500">
 
 				<br>
 				<br>
 				<br>
 
 				<h2>UNC functions added:</h2>
+
+				<h2>✅ - Supported | ❌ - Not Supported | ⏺ - Partially Supported</h2>
 
 				<table>
 					<thead>
@@ -90,7 +93,7 @@
 
 						<tr>
 							<td rowspan="1">WebSocket</td>
-							<td>Not Supported ❌</td>
+							<td>WebSocket.connect ❌</td>
 						</tr>
 
 						<tr>
@@ -140,7 +143,7 @@
 						</tr>
 
 						<tr>
-							<td>hookfunction* ✅</td>
+							<td>hookfunction ⏺</td>
 						</tr>
 
 						<tr>
@@ -174,8 +177,20 @@
 						</tr>
 
 						<tr>
-							<td rowspan="1">console</td>
-							<td>coming soon 🔜</td>
+							<td rowspan="4">console</td>
+							<td>rconsoleclear ✅</td>
+						</tr>
+
+						<tr>
+							<td>rconsoleprint ❌</td>
+						</tr>
+
+						<tr>
+							<td>rconsolecreate ❌</td>
+						</tr>
+
+						<tr>
+							<td>rconsoledestroy ❌</td>
 						</tr>
 
 						<tr>
@@ -220,9 +235,39 @@
 						</tr>
 
 						<tr>
-							<td rowspan="1">debug</td>
-							<td>Not Supported (using roblox's debug library) ❌</td>
+							<td rowspan="13">debug</td>
+							<td>getconstant ❌</td>
 						</tr>
+						<tr>
+							<td>getconstants ❌</td>
+						</tr>
+						<tr>
+							<td>getinfo ⏺</td>
+						</tr>
+						<tr>
+							<td>getproto ❌</td>
+						</tr>
+						<tr>
+							<td>getprotos ❌</td>
+						</tr>
+						<tr>
+							<td>getstack ❌</td>
+						</tr>
+						<tr>
+							<td>setstack ❌</td>
+						</tr>
+						<tr>
+							<td>getupvalue ❌</td>
+						</tr>
+						<tr>
+							<td>getupvalues ❌</td>
+						</tr>
+						<tr>
+							<td>setconstant ❌</td>
+						</tr>
+						<tr>
+							<td>setupvalue ❌</td>
+						</tr>		
 
 						<tr>
 							<td colspan="2" style="border: none; height: 0;">
