@@ -104,15 +104,15 @@
 
 						<tr>
 							<td rowspan="5">cache</td>
-							<td>cache.invalidate ❌</td>
+							<td>cache.invalidate ✅</td>
 						</tr>
 
 						<tr>
-							<td>cache.iscached ❌</td>
+							<td>cache.iscached ✅</td>
 						</tr>
 
 						<tr>
-							<td>cache.replace ❌</td>
+							<td>cache.replace ✅</td>
 						</tr>
 
 						<tr>
@@ -350,7 +350,23 @@
 
 						<tr>
 							<td rowspan="1">metatable</td>
-							<td>Not Supported ❌</td>
+							<td>getrawmetatable ✅</td>
+						</tr>
+
+						<tr>
+							<td>hookmetamethod ❌</td>
+						</tr>
+
+						<tr>
+							<td>getnamecallmethod ❌</td>
+						</tr>
+
+						<tr>
+							<td>isreadonly ✅</td>
+						</tr>
+
+						<tr>
+							<td>setreadonly ❌</td>
 						</tr>
 
 						<tr>
